@@ -1,0 +1,17 @@
+{
+  "name": "oceantoken-examples-node",
+  "private": true,
+  "type": "module",
+  "description": "OceanToken API examples for Node.js 18+ with the official OpenAI SDK.",
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "chat": "node chat.mjs",
+    "stream": "node stream.mjs",
+    "tools": "node tools.mjs",
+    "image": "node image.mjs",
+    "video": "node video.mjs"
+  },
+  "dependencies": {
+    "openai": "^6.0.0"
+  }
+}
