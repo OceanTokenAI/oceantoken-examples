@@ -21,9 +21,11 @@ ID = re.compile(
 with urllib.request.urlopen(CATALOG, timeout=60) as resp:
     catalog = {m["model_group"]: m for m in json.load(resp)}
 
+# Only the repository's own files: a virtualenv or node_modules inside the checkout is not ours to check.
+SKIP = {"node_modules", ".git", ".venv", "venv", "env", "__pycache__"}
 used = {}
 for path in ROOT.rglob("*"):
-    if path.is_dir() or "node_modules" in path.parts or path.suffix not in {".py", ".mjs", ".sh", ".md", ".json"}:
+    if path.is_dir() or SKIP & set(path.relative_to(ROOT).parts) or path.suffix not in {".py", ".mjs", ".sh", ".md", ".json"}:
         continue
     for model_id in ID.findall(path.read_text(encoding="utf-8")):
         used.setdefault(model_id, set()).add(str(path.relative_to(ROOT)))

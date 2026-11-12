@@ -1,6 +1,6 @@
 # OceanToken API examples
 
-Runnable examples for [OceanToken](https://oceantoken.ai): one API key and one prepaid USD balance for 500+ AI models (chat, image, video, speech, embeddings), behind an OpenAI-compatible API and the Anthropic Messages API. Prices are at or below each maker's official price; Claude, GPT and Gemini models are billed at 10% below official.
+Runnable examples for [OceanToken](https://oceantoken.ai): one API key and one prepaid USD balance for nearly 500 AI models (chat, image, video, speech, embeddings), behind an OpenAI-compatible API and the Anthropic Messages API. Prices are at or below each maker's official price; Claude, GPT and Gemini models are billed at 10% below official.
 
 - Base URL: `https://api.oceantoken.ai/v1`
 - Auth: `Authorization: Bearer $OCEANTOKEN_API_KEY`
