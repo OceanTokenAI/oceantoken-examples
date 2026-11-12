@@ -51,4 +51,4 @@ Codex sends roughly 12,000 to 16,000 tokens of its own instructions with each re
 | `deepseek/deepseek-v4.1-flash` | $0.30 | $0.006 | $1.20 |
 | `qwen/qwen3.8-max-0902` | $2.00 | $0.25 | $6.00 |
 
-These are the makers' official list prices; GPT models are billed at 90% of them (`list_discount_factor` `0.9`). Switch for one run with `-m <model id>`.
+These are the makers' official list prices. For the two GPT models here, input and output are billed at 90% of them (`list_discount_factor` `0.9`); cached input stays at the official price. Switch for one run with `-m <model id>`.

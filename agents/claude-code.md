@@ -54,7 +54,7 @@ Use model ids exactly as https://oceantoken.ai/models lists them. Claude Code re
 | `anthropic/claude-haiku-4.5` | $1.00 | $0.10 | $5.00 |
 | `deepseek/deepseek-v4.1-flash` | $0.30 | $0.006 | $1.20 |
 
-These are the makers' official list prices. Claude models are billed at 90% of them (the catalog's `list_discount_factor` is `0.9`). Prices change; check the catalog or the model page before you rely on a number.
+These are the makers' official list prices. For the Claude models here, input and output are billed at 90% of them (the catalog's `list_discount_factor` is `0.9`); cached input stays at the official price. Prices change; check the catalog or the model page before you rely on a number.
 
 ## Switching back
 
